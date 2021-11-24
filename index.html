@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    <script>
+
+        // prime number
+
+        var num=23;
+        var flag=false;
+        var prime="The num is prime";
+        var notprime="The num is not prime";
+
+        document.write("the <b>num is:<b>",num);
+        document.write("<br> <br>")
+    
+
+        if(num==1){
+            console.log(notprime);
+
+        }
+
+        else if(num==2){
+            console.log("The num is prime");
+        }
+
+        else{
+
+            for(var i=2;i<num;i++){
+            if(num%i==0){
+                flag=true;
+                break;
+            }
+            else{
+                flag=false;
+            }
+
+
+
+        }
+
+        if(flag==false){
+            console.log("The number is prime");
+            
+            document.write(prime); 
+        }
+        else{
+            console.log("the number is not prime");
+           
+            document.write(notprime); 
+        }
+
+        }
+
+       
+
+
+        
+
+        
+    </script>
+    
+</body>
+</html>
